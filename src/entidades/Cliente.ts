@@ -1,18 +1,18 @@
-export class Cliente {
-    private id: number;
-    private nome : string;
-    private email: string;
-    private telefone : string;
+    export class Cliente {
+        private nome: string;
+        private senha : string;
+        private cpf : string;
+        private email : string
 
 
-    constructor (id:number,nome:string,email:string,telefone:string){
-        this.id = id;
-        this.nome =  nome;
-        this.email = email;
-        this.telefone = telefone;
+        constructor( nome: string,senha: string,cpf : string, email: string) {
+            this.nome = nome;
+            this.senha = senha;
+            this.cpf = cpf;
+            this.email = email;
 
-}
+        }
 
 
- 
-}
+
+    }

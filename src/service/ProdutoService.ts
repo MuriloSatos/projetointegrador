@@ -1,16 +1,16 @@
-import { cp } from "fs";
-import { Cliente } from "../entidades/Cliente";
-import { ClienteRepository } from "../repository/ClienteRepository";
-export class ClienteService {
+import { Produto } from "../entidades/produto";
+import { ProdutoRepository } from "../repository/ProdutoRepository";
 
-    private repo: ClienteRepository
+export class ProdutoService {
+
+    private repo: ProdutoRepository
     constructor() {
-        this.repo = new ClienteRepository();
+        this.repo = new ProdutoRepository();
     }
 
-    public async listarClientes(): Promise<Cliente[]> {
+    public async listarProdutos(): Promise<Produto[]> {
 
-        return await this.repo.listarClientes()
+        return await this.repo.listarProdutos()
     }
 
 
@@ -45,6 +45,4 @@ export class ClienteService {
 
     }
     
-
 }
-
